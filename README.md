@@ -1,50 +1,47 @@
-
 # Astronomy Themed Portfolio Website
 
-This is a single-page portfolio website built with React, Vite, and Tailwind CSS. It features an astronomy-themed design and a narrative structure to showcase projects and skills. The user interface includes scroll-based animations and effects.
+This is a single-page portfolio website built with Astro, React, and Tailwind CSS. It features an astronomy-themed design and a narrative structure to showcase projects and skills. The user interface includes scroll-based animations and effects.
 
 ## Features
 
 -   **Design:** A dark, space/astronomy theme with gradients, celestial objects, and a "glassmorphism" effect.
 -   **User Experience:** Scroll-based animations and effects.
 -   **Content:** The portfolio is structured to guide visitors through the developer's journey, skills, and projects.
--   **Architecture:** A component-based architecture, following the principles of **shadcn/ui**.
+-   **Architecture:** A component-based architecture for the React portion, following the principles of **shadcn/ui**.
 -   **Responsiveness:** The website is designed to be responsive across different devices.
 
 ## Technology Stack
 
--   **Core Framework:** [React](https://react.dev/) (v18) with [Vite](https://vitejs.dev/) as the build tool.
+-   **Core Framework:** [Astro](https://astro.build/) for the static site generation and [React](https://react.dev/) (v19) for the UI components.
 -   **Language:** [TypeScript](https://www.typescriptlang.org/) for type-safe code.
 -   **Styling:** [Tailwind CSS](https://tailwindcss.com/) for utility-first styling.
 -   **UI Components:**
     -   [Radix UI Primitives](https://www.radix-ui.com/): Headless, accessible components.
     -   [class-variance-authority (CVA)](https://cva.style/docs): For creating variant-based component styles.
     -   [tailwind-merge](https://github.com/dcastil/tailwind-merge) and [clsx](https://github.com/lukeed/clsx): For conditional and clean class name management.
--   **Animation:** [Framer Motion](https://www.framer.com/motion/) for component animations.
+-   **Animation:** [Motion One](https://motion.dev/) for component animations.
 -   **Icons:** [Lucide React](https://lucide.dev/) for icons.
 
 ## Project Structure
 
-The codebase is organized following standard conventions for a React project.
+The codebase is organized with an Astro container for the main page, which then runs a full React application.
 
 ```
 /
 ├─── src/
-│   ├─── components/
-│   │   ├─── ui/         # Base UI components (shadcn/ui style)
-│   │   ├─── figma/      # Components potentially designed in Figma
-│   │   ├─── Footer.tsx
-│   │   ├─── Hero.tsx      # The main hero section
-│   │   ├─── ProjectCard.tsx # Reusable card for projects
-│   │   ├─── StarField.tsx # Animated background component
-│   │   └─── StorySection.tsx # Wrapper for narrative sections
-│   ├─── styles/
-│   │   └─── globals.css # Global styles and Tailwind directives
-│   ├─── App.tsx         # Main application component, layout composition
-│   ├─── main.tsx        # Application entry point
-│   └─── index.css       # Main CSS file with color palette
-├─── vite.config.ts      # Vite build and development configuration
-└─── package.json        # Project dependencies and scripts
+│   ├─── pages/
+│   │   └─── index.astro        # Astro page, the main entry point
+│   ├─── react-app/
+│   │   ├─── components/       # All React components (ui, custom, etc.)
+│   │   ├─── App.tsx            # Main React application component
+│   │   └─── styles/
+│   │       └─── globals.css    # Global styles for the React app
+│   └─── styles/
+│       └─── global.css         # Global styles for Astro pages
+├─── public/
+│   └─── images/                # Static image assets
+├─── astro.config.mjs           # Astro configuration
+└─── package.json               # Project dependencies and scripts
 ```
 
 ## Getting Started
@@ -71,20 +68,18 @@ To get a local copy up and running, follow these steps.
     bun run dev
     ```
 
-The application will be available at `http://localhost:3000`.
+The application will be available at `http://localhost:4321`.
 
 ## Deployment
 
-The project is deployed using [GitHub Pages](https://pages.github.com/). The `deploy` script in `package.json` handles the build and deployment process.
+The project can be built for production using the Astro CLI.
 
-To deploy the application, run:
-
+To build the application, run:
 ```sh
-bun run deploy
+bun run build
 ```
-
-This will build the application and push the contents of the `build` directory to the `gh-pages` branch of your repository.
+This will create a `dist/` directory with the production-ready files, which can then be deployed to any static hosting service.
 
 ## Attributions
 
-The celestial objects used in this project are from [Unsplash](https://unsplash.com/). Please see the `src/Attributions.md` file for a complete list of attributions.
+The celestial objects used in this project are from public domain sources. Please see the `src/react-app/Attributions.md` file for a complete list of attributions.

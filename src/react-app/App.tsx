@@ -26,7 +26,7 @@ export default function App() {
       <StarField scrollY={scrollY} />
       <CelestialObjects scrollY={scrollY} />
 
-      <div className="relative z-10 font-roboto">
+      <div className="relative z-10 font-space">
         <Hero />
 
         <StorySection title="The Awakening">

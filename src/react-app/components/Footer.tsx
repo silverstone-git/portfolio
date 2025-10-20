@@ -1,5 +1,4 @@
 
-import EarthSurface from '../assets/earth.png';
 
 
 export function Footer() {
@@ -21,7 +20,7 @@ export function Footer() {
         }}
       >
         <img
-          src={EarthSurface}
+          src="/images/earth.png"
           alt="Earth"
           className="w-full h-auto opacity-90 drop-shadow-[0_0_3rem_rgba(100,150,255,0.5)]"
         />

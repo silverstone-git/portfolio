@@ -2,14 +2,8 @@
 import React from 'react';
 
 // Import the new assets
-import BlackHole from '../assets/black_hole.png';
-import Galaxy1 from '../assets/galaxy1_red.png';
-import Galaxy2 from '../assets/galaxy2_spiral_plane.png';
-import Galaxy3 from '../assets/galaxy3_edge_blue.png';
-import Galaxy4 from '../assets/galaxy4_purple_edge.png';
-import Galaxy5 from '../assets/galaxy5_blue_ring.png';
-import Galaxy6 from '../assets/galaxy6_spiral-4-arm.png';
-import Galaxy7 from '../assets/galaxy7_spiral-slant.png';
+// import Galaxy5 from '../assets/galaxy5_blue_ring.png';
+// import Galaxy6 from '../assets/galaxy6_spiral-4-arm.png';
 
 
 interface CelestialObjectsProps {
@@ -25,7 +19,7 @@ export const CelestialObjects: React.FC<CelestialObjectsProps> = ({ scrollY }) =
       {/* Replace the divs with img tags using the imported assets */}
       
       <img
-        src={Galaxy1}
+        src="/images/galaxy1_red.png"
         alt="Red galaxy"
         className="absolute w-32 h-32 opacity-70"
         style={{ 
@@ -36,7 +30,7 @@ export const CelestialObjects: React.FC<CelestialObjectsProps> = ({ scrollY }) =
       />
       
       <img
-        src={Galaxy2}
+        src="/images/galaxy2_spiral_plane.png"
         alt="Spiral plane galaxy"
         className="absolute w-48 h-24 opacity-60"
         style={{ 
@@ -47,7 +41,7 @@ export const CelestialObjects: React.FC<CelestialObjectsProps> = ({ scrollY }) =
       />
 
       <img
-        src={Galaxy3}
+        src="/images/galaxy3_edge_blue.png"
         alt="Blue edge galaxy"
         className="absolute w-40 h-20 opacity-80"
         style={{ 
@@ -58,7 +52,7 @@ export const CelestialObjects: React.FC<CelestialObjectsProps> = ({ scrollY }) =
       />
 
        <img
-        src={Galaxy4}
+        src="/images/galaxy4_purple_edge.png"
         alt="Purple edge galaxy"
         className="absolute w-36 h-36 opacity-70"
         style={{ 
@@ -69,7 +63,7 @@ export const CelestialObjects: React.FC<CelestialObjectsProps> = ({ scrollY }) =
       />
 
       <img
-        src={BlackHole}
+        src="/images/black_hole.png"
         alt="Black hole"
 	width="200px"
 	height="200px"
@@ -82,7 +76,7 @@ export const CelestialObjects: React.FC<CelestialObjectsProps> = ({ scrollY }) =
       />
 
       <img
-        src={Galaxy7}
+        src="/images/galaxy7_spiral-slant.png"
         alt="Slanted spiral galaxy"
         className="absolute w-20 h-20 opacity-60"
         style={{ 

@@ -1,0 +1,21 @@
+---
+import '../styles/global.css';
+import App from '../react-app/App.tsx';
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/icon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+
+	<body>
+		<div id="root">
+			<App client:load />
+		</div>
+	</body>
+</html>
