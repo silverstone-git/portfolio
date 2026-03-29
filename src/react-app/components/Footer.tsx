@@ -45,7 +45,7 @@ export function Footer() {
           </div>
           
           <p className="text-sm text-gray-400 drop-shadow-md">
-            © 2025 Aryan Sidhwani. Built with React, Tailwind, and cosmic inspiration.
+            © 2026 Aryan Sidhwani. Built with React, Tailwind, and cosmic inspiration.
           </p>
         </div>
       </div>

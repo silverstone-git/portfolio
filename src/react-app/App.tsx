@@ -38,30 +38,30 @@ export default function App() {
 
         </StorySection>
 
-        <StorySection title="Current Orbit">
-          <div className="bg-gradient-to-br from-indigo-950/40 to-blue-950/40 backdrop-blur-sm p-8 rounded-2xl border border-indigo-500/20">
-            <h3 className="text-2xl text-blue-100 mb-4">C Simplify IT • Software Engineer</h3>
-            <p className="text-sm text-gray-400 mb-6">May 2025 - Present • Remote</p>
-            
-            <p className="text-lg leading-relaxed mb-6">
-              Today, I'm navigating the cutting edge of AI at C Simplify IT, where every day is about pushing boundaries. 
-              I work with the <span className="text-purple-300">Hugging Face ecosystem</span>, building AI applications that feel 
-              like magic but are grounded in rigorous engineering.
-            </p>
-            
-            <p className="text-lg leading-relaxed mb-6">
-              Fine-tuning large language models like <span className="text-purple-300">Qwen3 using LoRA</span> has taught me 
-              that AI isn't just about raw computation—it's about personality, nuance, and behavior. I've created chatbots 
-              that don't just respond, but converse with distinct intonations and character.
-            </p>
-            
-            <p className="text-lg leading-relaxed">
-              Working with <span className="text-purple-300">FastAPI and MongoDB</span>, I handle the invisible but crucial work: 
-              data pipelines, infrastructure, and the engineering that makes AI products actually work in the real world. 
-              I even forked the Web Thinker open-source project, adapting it to breathe life into new applications.
-            </p>
-          </div>
-        </StorySection>
+				<StorySection title="Current Orbit">
+					<div class="bg-gradient-to-br from-indigo-950/40 to-blue-950/40 backdrop-blur-sm p-8 rounded-2xl border border-indigo-500/20">
+						<h3 class="text-2xl text-blue-100 mb-4">C Simplify IT • Software Engineer</h3>
+						<p class="text-sm text-gray-400 mb-6">May 2025 - Present • Remote</p>
+						
+						<p class="text-lg leading-relaxed mb-6">
+						I'm currently working as an Software Engineer at C Simplify IT, where I usually tinker with cutting edge voice AI, STT, TTS, OCR, and Generative AI. 
+							I work with the <span class="text-purple-300">Hugging Face ecosystem</span>, building AI applications that feel 
+							like magic but are grounded in rigorous engineering.
+						</p>
+						
+						<p class="text-lg leading-relaxed mb-6">
+							Fine-tuning large language models like <span class="text-purple-300">Qwen3 using LoRA</span> has taught me 
+							that AI isn't just about raw computation—it's about personality, nuance, and behavior. I've created chatbots 
+							that don't just respond, but converse with distinct intonations and character.
+						</p>
+						
+						<p class="text-lg leading-relaxed">
+							Working with <span class="text-purple-300">FastAPI and MongoDB</span>, I handle the invisible but crucial work: 
+							data pipelines, infrastructure using <span class="text-purple-300">Runpod and Docker</span>, and the engineering that makes AI products actually work in the real world. 
+							I also contribute to open-source projects, which are used in our services, thus giving back to the community.
+						</p>
+					</div>
+				</StorySection>
 
         <StorySection title="Stellar Creations">
           <p className="text-lg leading-relaxed mb-8 text-center">
@@ -70,6 +70,14 @@ export default function App() {
 
           <div className="space-y-6">
 
+            <ProjectCard
+              title="Pariksha"
+              date="February 2026"
+              story="Pariksha is a exam practice platform designed for scientific exams. It features a exam engine grounded with scientific papers and books embedded into a Vector Database, coupled with an automated AI pipeline for question generation and question bank management. It features  Topic wise custom exams, Negative Marking section wise systems, MSQs, NATs, and a live scoring sidebar that tracks potential max/min scores via real-time session telemetry"
+              technologies="LlamaIndex • ChromaDB • RAG • Gemini API • Cloudflare R2 • React • Tailwind CSS"
+              githubUrl="https://github.com/silverstone-git/pariksha"
+              liveUrl="https://pariksha.aryan.cfd"
+            />
 
             <ProjectCard
               title="CTIX Analyzer"
@@ -79,13 +87,6 @@ export default function App() {
               githubUrl="https://github.com/silverstone-git/ctix-analysis"
             />
 
-            <ProjectCard
-              title="PEM Bot"
-              date="February 2025"
-              story="Information trapped in blog posts is information lost. I created a RAG pipeline for the 'Please Explain Me' blog that makes knowledge searchable and conversational. Using Gemini's text embedding API with MongoDB Vector Search, I turned static articles into a queryable knowledge base. The bot scrapes Gartner's business trends with Selenium, chunks the data intelligently, and responds using gemini-2.0-flash. It's like giving a blog a brain."
-              technologies="RAG Pipeline • Gemini API • MongoDB Vector Search • Selenium • gemini-2.0-flash"
-              githubUrl="https://github.com/silverstone-git/pem-rag-chatbot"
-            />
 
             <ProjectCard
               title="Coldwheels"

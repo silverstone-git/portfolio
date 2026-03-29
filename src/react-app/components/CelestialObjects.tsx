@@ -20,7 +20,7 @@ export const CelestialObjects: React.FC<CelestialObjectsProps> = ({ scrollY }) =
       
       <img
         src="/images/galaxy1_red.png"
-        alt="Red galaxy"
+        alt="Distant red spiral galaxy in deep space"
         className="absolute w-32 h-32 opacity-70"
         style={{ 
           top: '15%', 
@@ -31,7 +31,7 @@ export const CelestialObjects: React.FC<CelestialObjectsProps> = ({ scrollY }) =
       
       <img
         src="/images/galaxy2_spiral_plane.png"
-        alt="Spiral plane galaxy"
+        alt="Spiral galaxy viewed from an inclined plane"
         className="absolute w-48 h-24 opacity-60"
         style={{ 
           top: '40%', 
@@ -42,7 +42,7 @@ export const CelestialObjects: React.FC<CelestialObjectsProps> = ({ scrollY }) =
 
       <img
         src="/images/galaxy3_edge_blue.png"
-        alt="Blue edge galaxy"
+        alt="Blue edge-on galaxy with glowing core"
         className="absolute w-40 h-20 opacity-80"
         style={{ 
           top: '75%', 
@@ -53,7 +53,7 @@ export const CelestialObjects: React.FC<CelestialObjectsProps> = ({ scrollY }) =
 
        <img
         src="/images/galaxy4_purple_edge.png"
-        alt="Purple edge galaxy"
+        alt="Purple edge-on galaxy in the cosmic background"
         className="absolute w-36 h-36 opacity-70"
         style={{ 
           top: '85%', 
@@ -64,7 +64,7 @@ export const CelestialObjects: React.FC<CelestialObjectsProps> = ({ scrollY }) =
 
       <img
         src="/images/black_hole.png"
-        alt="Black hole"
+        alt="Stellar black hole with accretion disk"
 	width="200px"
 	height="200px"
         className="absolute opacity-80"
@@ -77,7 +77,7 @@ export const CelestialObjects: React.FC<CelestialObjectsProps> = ({ scrollY }) =
 
       <img
         src="/images/galaxy7_spiral-slant.png"
-        alt="Slanted spiral galaxy"
+        alt="Slanted spiral galaxy in the stellar constellation"
         className="absolute w-20 h-20 opacity-60"
         style={{ 
           top: '10%', 
